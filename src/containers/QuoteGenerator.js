@@ -6,9 +6,15 @@ class QuoteGenerator extends React.Component {
         this.state = {
             quote: ""
         };
+
+        this.generateQuote = this.generateQuote.bind(this);
     }
 
     componentDidMount() {
+        this.generateQuote();
+    }
+
+    generateQuote() {
         const url = "https://api.kanye.rest/"; 
         fetch(url)
             .then((res) => res.json())
@@ -23,6 +29,8 @@ class QuoteGenerator extends React.Component {
         return(
             <div>
                 <p>{this.state.quote}</p>
+
+                <button type="button" onClick={this.generateQuote}>Generate Quote</button>
             </div>
         )
     }
