@@ -37,7 +37,7 @@ class QuoteGenerator extends React.Component {
         const { album } = this.state;
 
         return(
-            <div className="container">
+            <div className={`container container--${album}`}>
 
                 <div className={`album-container album-container--${album}`}>
                     <label htmlFor="album-select">Choose an album:</label>
@@ -53,12 +53,13 @@ class QuoteGenerator extends React.Component {
                         <option value="yeezus">Yeezus</option>
                         <option value="pablo">The Life of Pablo</option>
                         <option value="ye">Ye</option>
-                        <option value="ghosts">Ghosts</option>
+                        <option value="ghosts">Kids See Ghosts</option>
                     </select>
                 </div>
 
                 <div className="quote-container">
-                    <p className="quote">{this.state.quote}</p>
+                    <p className={`quote quote--${album}`}>{this.state.quote}</p>
+                    <p>- Kanye West</p>
 
                     <button className="button" type="button" onClick={this.generateQuote}>Generate Quote</button>
                 </div>

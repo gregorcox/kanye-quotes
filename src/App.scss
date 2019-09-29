@@ -3,6 +3,7 @@ $college: #3b0316;
 $college2: #FED100;
 
 $registration: #331502;
+$registration2: #B7952C;
 
 $graduation: #F30A91;
 $graduation2: #73328A;
@@ -11,7 +12,8 @@ $heartbreak: #CADFE0;
 $heartbreak2: #FB1F00;
 
 $fantasy: #EF2341;
-$fantasy2: #F99958;
+$fantasy2: #09786C;
+$fantasy3: #FAE62D;
 
 $throne: #C3A77C;
 
@@ -26,8 +28,61 @@ $ye2: #17F141;
 $ghosts: #DD5E86;
 $ghosts2: #85BCC6;
 
+.container {
+    height: 100vh;
+
+    font-size: 30px;
+
+    &--pablo {
+        background: $pablo;
+
+        font-family: Helvetica;
+        text-transform: uppercase;
+        font-weight: 600;
+    }
+
+    &--graduation {
+        background: $graduation2;
+        color: white;
+    }
+
+    &--ye {
+        background: $ye;
+        color: $ye2;
+    }
+
+    &--fantasy {
+        background: $fantasy;
+        color: $fantasy3;
+    }
+
+    &--ghosts {
+        background: $ghosts2;
+    }
+
+    &--heartbreak {
+        background: $heartbreak;
+        color: $heartbreak2;
+        
+        font-weight: 600;
+    }
+
+    &--registration {
+        background: $registration;
+        color: $registration2;        
+    }
+
+    &--throne {
+        background: $throne;
+    }
+    
+    &--yeezus {
+        background: $yeezus;
+    }
+}
+
 .quote-container {
-    margin: 50px 25vw;
+    margin: 50px 10vw;
     
     text-align: center;
 }
@@ -37,13 +92,17 @@ $ghosts2: #85BCC6;
     align-items: center;
     justify-content: center;
     height: 200px;
+
+    transition: 0.2s ease-in-out;
 }
 
 .button {
-    border: 1px solid black;
     height: 50px;
     width: 200px;
 
+    margin-top: 25px;
+    
+    border: 1px solid black;
     outline: none;
     box-shadow: none;
 
@@ -57,49 +116,61 @@ $ghosts2: #85BCC6;
     flex-direction: column;
     justify-content: center;
     align-items: flex-end;
-    height: 100px;
+    height: 25vh;
 
     padding: 0 25px;
+    border-bottom: 5px solid;
 
     transition: all 0.2s ease-in-out;
 
     &--college {
         background: $college;
+        border-bottom: 5px solid $college2;
+        color: $college2;
     }
 
     &--registration {
         background: $registration;
+        border-bottom: 5px solid $registration2;
     }
 
     &--graduation {
         background: $graduation;
-    }
-
-    &--heartbreak {
-        background: $heartbreak;
+        border-bottom: 5px solid $graduation2;
     }
 
     &--fantasy {
         background: $fantasy;
-    }
-
-    &--throne {
-        background: $throne;
+        border-bottom: 5px solid $fantasy2;
     }
 
     &--yeezus {
-        background: $yeezus;
+        border-bottom: 5px solid $yeezus2;
     }
 
     &--pablo {
         background: $pablo;
+
+        font-family: Helvetica;
+        text-transform: uppercase;
+        font-weight: 600;
     }
 
     &--ye {
         background: $ye;
+
+        border-bottom: 5px solid $ye2;
     }
 
     &--ghosts {
         background: $ghosts;
+    }
+
+    select {
+        height: 30px;
+
+        margin: 25px;
+
+        outline: none;
     }
 }

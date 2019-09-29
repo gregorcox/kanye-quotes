@@ -1,5 +1,55 @@
+.container {
+  height: 100vh;
+  font-size: 30px;
+}
+
+.container--pablo {
+  background: #F69561;
+  font-family: Helvetica;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+.container--graduation {
+  background: #73328A;
+  color: white;
+}
+
+.container--ye {
+  background: #42658E;
+  color: #17F141;
+}
+
+.container--fantasy {
+  background: #EF2341;
+  color: #FAE62D;
+}
+
+.container--ghosts {
+  background: #85BCC6;
+}
+
+.container--heartbreak {
+  background: #CADFE0;
+  color: #FB1F00;
+  font-weight: 600;
+}
+
+.container--registration {
+  background: #331502;
+  color: #B7952C;
+}
+
+.container--throne {
+  background: #C3A77C;
+}
+
+.container--yeezus {
+  background: #C8EDF1;
+}
+
 .quote-container {
-  margin: 50px 25vw;
+  margin: 50px 10vw;
   text-align: center;
 }
 
@@ -14,12 +64,15 @@
       -ms-flex-pack: center;
           justify-content: center;
   height: 200px;
+  -webkit-transition: 0.2s ease-in-out;
+  transition: 0.2s ease-in-out;
 }
 
 .button {
-  border: 1px solid black;
   height: 50px;
   width: 200px;
+  margin-top: 25px;
+  border: 1px solid black;
   outline: none;
   -webkit-box-shadow: none;
           box-shadow: none;
@@ -43,49 +96,57 @@
   -webkit-box-align: end;
       -ms-flex-align: end;
           align-items: flex-end;
-  height: 100px;
+  height: 25vh;
   padding: 0 25px;
+  border-bottom: 5px solid;
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
 }
 
 .album-container--college {
   background: #3b0316;
+  border-bottom: 5px solid #FED100;
+  color: #FED100;
 }
 
 .album-container--registration {
   background: #331502;
+  border-bottom: 5px solid #B7952C;
 }
 
 .album-container--graduation {
   background: #F30A91;
-}
-
-.album-container--heartbreak {
-  background: #CADFE0;
+  border-bottom: 5px solid #73328A;
 }
 
 .album-container--fantasy {
   background: #EF2341;
-}
-
-.album-container--throne {
-  background: #C3A77C;
+  border-bottom: 5px solid #09786C;
 }
 
 .album-container--yeezus {
-  background: #C8EDF1;
+  border-bottom: 5px solid #FE1D01;
 }
 
 .album-container--pablo {
   background: #F69561;
+  font-family: Helvetica;
+  text-transform: uppercase;
+  font-weight: 600;
 }
 
 .album-container--ye {
   background: #42658E;
+  border-bottom: 5px solid #17F141;
 }
 
 .album-container--ghosts {
   background: #DD5E86;
+}
+
+.album-container select {
+  height: 30px;
+  margin: 25px;
+  outline: none;
 }
 /*# sourceMappingURL=App.css.map */
