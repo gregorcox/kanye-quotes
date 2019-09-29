@@ -1,3 +1,7 @@
+// Fonts
+@import url('https://fonts.googleapis.com/css?family=Rock+Salt&display=swap');
+$yeFont: 'Rock Salt', cursive;
+
 // Colour variables
 $college: #3b0316;
 $college2: #FED100;
@@ -43,16 +47,21 @@ $ghosts2: #85BCC6;
 
     &--graduation {
         background: $graduation2;
+
         color: white;
     }
 
     &--ye {
         background: $ye;
+
         color: $ye2;
+        font-family: $yeFont;
+        font-size: 20px;
     }
 
     &--fantasy {
         background: $fantasy;
+
         color: $fantasy3;
     }
 
@@ -69,7 +78,9 @@ $ghosts2: #85BCC6;
 
     &--registration {
         background: $registration;
-        color: $registration2;        
+
+        color: $registration2;  
+        font-family: "Times New Roman", sans-serif;      
     }
 
     &--throne {
@@ -78,6 +89,9 @@ $ghosts2: #85BCC6;
     
     &--yeezus {
         background: $yeezus;
+
+        font-family: "arial-black";
+        text-transform: uppercase;
     }
 }
 

@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css?family=Rock+Salt&display=swap");
 .container {
   height: 100vh;
   font-size: 30px;
@@ -18,6 +19,8 @@
 .container--ye {
   background: #42658E;
   color: #17F141;
+  font-family: "Rock Salt", cursive;
+  font-size: 20px;
 }
 
 .container--fantasy {
@@ -38,6 +41,7 @@
 .container--registration {
   background: #331502;
   color: #B7952C;
+  font-family: "Times New Roman", sans-serif;
 }
 
 .container--throne {
@@ -46,6 +50,8 @@
 
 .container--yeezus {
   background: #C8EDF1;
+  font-family: "arial-black";
+  text-transform: uppercase;
 }
 
 .quote-container {
