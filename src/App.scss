@@ -1,5 +1,105 @@
+// Colour variables
+$college: #3b0316;
+$college2: #FED100;
+
+$registration: #331502;
+
+$graduation: #F30A91;
+$graduation2: #73328A;
+
+$heartbreak: #CADFE0;
+$heartbreak2: #FB1F00;
+
+$fantasy: #EF2341;
+$fantasy2: #F99958;
+
+$throne: #C3A77C;
+
+$yeezus: #C8EDF1;
+$yeezus2: #FE1D01;
+
+$pablo: #F69561;
+
+$ye: #42658E;
+$ye2: #17F141;
+
+$ghosts: #DD5E86;
+$ghosts2: #85BCC6;
+
 .quote-container {
     margin: 50px 25vw;
     
     text-align: center;
+}
+
+.quote {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 200px;
+}
+
+.button {
+    border: 1px solid black;
+    height: 50px;
+    width: 200px;
+
+    outline: none;
+    box-shadow: none;
+
+    &:hover {
+        cursor: pointer;
+    }
+}
+
+.album-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    height: 100px;
+
+    padding: 0 25px;
+
+    transition: all 0.2s ease-in-out;
+
+    &--college {
+        background: $college;
+    }
+
+    &--registration {
+        background: $registration;
+    }
+
+    &--graduation {
+        background: $graduation;
+    }
+
+    &--heartbreak {
+        background: $heartbreak;
+    }
+
+    &--fantasy {
+        background: $fantasy;
+    }
+
+    &--throne {
+        background: $throne;
+    }
+
+    &--yeezus {
+        background: $yeezus;
+    }
+
+    &--pablo {
+        background: $pablo;
+    }
+
+    &--ye {
+        background: $ye;
+    }
+
+    &--ghosts {
+        background: $ghosts;
+    }
 }

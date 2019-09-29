@@ -2,4 +2,90 @@
   margin: 50px 25vw;
   text-align: center;
 }
+
+.quote {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 200px;
+}
+
+.button {
+  border: 1px solid black;
+  height: 50px;
+  width: 200px;
+  outline: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+.button:hover {
+  cursor: pointer;
+}
+
+.album-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  height: 100px;
+  padding: 0 25px;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+
+.album-container--college {
+  background: #3b0316;
+}
+
+.album-container--registration {
+  background: #331502;
+}
+
+.album-container--graduation {
+  background: #F30A91;
+}
+
+.album-container--heartbreak {
+  background: #CADFE0;
+}
+
+.album-container--fantasy {
+  background: #EF2341;
+}
+
+.album-container--throne {
+  background: #C3A77C;
+}
+
+.album-container--yeezus {
+  background: #C8EDF1;
+}
+
+.album-container--pablo {
+  background: #F69561;
+}
+
+.album-container--ye {
+  background: #42658E;
+}
+
+.album-container--ghosts {
+  background: #DD5E86;
+}
 /*# sourceMappingURL=App.css.map */
