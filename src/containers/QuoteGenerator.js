@@ -18,6 +18,7 @@ class QuoteGenerator extends React.Component {
         this.generateQuote();
     }
 
+    // Get quote from API and set in state
     generateQuote() {
         const url = "https://api.kanye.rest/";
         fetch(url)
@@ -29,6 +30,7 @@ class QuoteGenerator extends React.Component {
             });
     }
 
+    // Set the album state as the value selected from the dropdown
     handleAlbumChage(evt) {
         this.setState({
             album: evt.target.value

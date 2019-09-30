@@ -1,7 +1,4 @@
 // Fonts
-@import url('https://fonts.googleapis.com/css?family=Rock+Salt&display=swap');
-$yeFont: 'Rock Salt', cursive;
-
 @import url('https://fonts.googleapis.com/css?family=East+Sea+Dokdo&display=swap');
 $ghostsFont: 'East Sea Dokdo', sans-serif;
 
@@ -11,12 +8,24 @@ $collegeFont: 'Graduate', sans-serif;
 @import url('https://fonts.googleapis.com/css?family=Alfa+Slab+One&display=swap');
 $graduationFont: 'Alfa Slab One', sans-serif;
 
+@import url('https://fonts.googleapis.com/css?family=Darker+Grotesque&display=swap');
+$heartbreakFont: 'Darker Grotesque', sans-serif;
+
+@import url('https://fonts.googleapis.com/css?family=Grenze&display=swap');
+$fantasyFont: 'Grenze', serif;
+
+@import url('https://fonts.googleapis.com/css?family=Mansalva&display=swap');
+$yeFont: 'Mansalva', cursive;
+
+@import url('https://fonts.googleapis.com/css?family=Cinzel|Mansalva&display=swap');
+$throneFont: 'Cinzel', serif;
+
 // Colour variables
 $college: #3b0316;
 $college2: #FED100;
 
-$registration: #331502;
-$registration2: #B7952C;
+$registration: #5B2D0B;
+$registration2: #C5AA01;
 
 $graduation: #F30A91;
 $graduation2: #73328A;
@@ -28,7 +37,7 @@ $fantasy: #EF2341;
 $fantasy2: #09786C;
 $fantasy3: #FAE62D;
 
-$throne: #C3A77C;
+$throne: #CEB87E;
 
 $yeezus: #C8EDF1;
 $yeezus2: #FE1D01;
@@ -71,13 +80,13 @@ $ghosts3: #FFF8E8;
 
         color: $ye2;
         font-family: $yeFont;
-        font-size: 20px;
     }
 
     &--fantasy {
         background: $fantasy;
 
         color: $fantasy3;
+        font-family: $fantasyFont;
     }
 
     &--ghosts {
@@ -90,9 +99,12 @@ $ghosts3: #FFF8E8;
 
     &--heartbreak {
         background: $heartbreak;
-        color: $heartbreak2;
 
-        font-weight: 600;
+        color: $heartbreak2;
+        font-family: $heartbreakFont;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        font-weight: 400;
     }
 
     &--registration {
@@ -103,7 +115,11 @@ $ghosts3: #FFF8E8;
     }
 
     &--throne {
-        background: $throne;
+        background: black;
+
+        color: $throne;
+
+        font-family: $throneFont;
     }
 
     &--yeezus {
@@ -126,7 +142,7 @@ $ghosts3: #FFF8E8;
     justify-content: center;
     height: 200px;
 
-    transition: 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
 }
 
 .button {

@@ -1,7 +1,10 @@
-@import url("https://fonts.googleapis.com/css?family=Rock+Salt&display=swap");
 @import url("https://fonts.googleapis.com/css?family=East+Sea+Dokdo&display=swap");
 @import url("https://fonts.googleapis.com/css?family=East+Sea+Dokdo|Graduate&display=swap");
 @import url("https://fonts.googleapis.com/css?family=Alfa+Slab+One&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Darker+Grotesque&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Grenze&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Mansalva&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Cinzel|Mansalva&display=swap");
 .container {
   height: 100vh;
   font-size: 30px;
@@ -27,13 +30,13 @@
 .container--ye {
   background: #42658E;
   color: #17F141;
-  font-family: "Rock Salt", cursive;
-  font-size: 20px;
+  font-family: "Mansalva", cursive;
 }
 
 .container--fantasy {
   background: #EF2341;
   color: #FAE62D;
+  font-family: "Grenze", serif;
 }
 
 .container--ghosts {
@@ -46,17 +49,22 @@
 .container--heartbreak {
   background: #CADFE0;
   color: #FB1F00;
-  font-weight: 600;
+  font-family: "Darker Grotesque", sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-weight: 400;
 }
 
 .container--registration {
-  background: #331502;
-  color: #B7952C;
+  background: #5B2D0B;
+  color: #C5AA01;
   font-family: "Times New Roman", sans-serif;
 }
 
 .container--throne {
-  background: #C3A77C;
+  background: black;
+  color: #CEB87E;
+  font-family: "Cinzel", serif;
 }
 
 .container--yeezus {
@@ -81,8 +89,8 @@
       -ms-flex-pack: center;
           justify-content: center;
   height: 200px;
-  -webkit-transition: 0.2s ease-in-out;
-  transition: 0.2s ease-in-out;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
 }
 
 .button {
@@ -131,8 +139,8 @@
 }
 
 .album-container--registration {
-  background: #331502;
-  border-bottom: 5px solid #B7952C;
+  background: #5B2D0B;
+  border-bottom: 5px solid #C5AA01;
 }
 
 .album-container--fantasy {
