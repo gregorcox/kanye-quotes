@@ -89,14 +89,18 @@
   height: 50px;
   width: 200px;
   margin-top: 25px;
-  border: 1px solid black;
+  border: 2px solid black;
   outline: none;
-  -webkit-box-shadow: none;
-          box-shadow: none;
+  font-weight: 600;
 }
 
 .button:hover {
   cursor: pointer;
+}
+
+.button .icon {
+  font-size: 15px;
+  padding-left: 10px;
 }
 
 .album-container {

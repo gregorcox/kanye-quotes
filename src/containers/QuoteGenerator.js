@@ -1,4 +1,6 @@
 import React from 'react';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faRedo } from '@fortawesome/free-solid-svg-icons'
 
 class QuoteGenerator extends React.Component {
     constructor(props) {
@@ -17,7 +19,7 @@ class QuoteGenerator extends React.Component {
     }
 
     generateQuote() {
-        const url = "https://api.kanye.rest/"; 
+        const url = "https://api.kanye.rest/";
         fetch(url)
             .then((res) => res.json())
             .then((res) => {
@@ -61,7 +63,7 @@ class QuoteGenerator extends React.Component {
                     <p className={`quote quote--${album}`}>{this.state.quote}</p>
                     <p>- Kanye West</p>
 
-                    <button className="button" type="button" onClick={this.generateQuote}>Generate Quote</button>
+                    <button className="button" type="button" onClick={this.generateQuote}>Generate Quote <FontAwesomeIcon icon={faRedo} className="icon" /></button>
                 </div>
 
             </div>
