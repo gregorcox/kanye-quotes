@@ -1,7 +1,14 @@
 @import url("https://fonts.googleapis.com/css?family=Rock+Salt&display=swap");
+@import url("https://fonts.googleapis.com/css?family=East+Sea+Dokdo&display=swap");
+@import url("https://fonts.googleapis.com/css?family=East+Sea+Dokdo|Graduate&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Alfa+Slab+One&display=swap");
 .container {
   height: 100vh;
   font-size: 30px;
+}
+
+.container--college {
+  font-family: "Graduate", sans-serif;
 }
 
 .container--pablo {
@@ -13,7 +20,8 @@
 
 .container--graduation {
   background: #73328A;
-  color: white;
+  color: #F30A91;
+  font-family: "Alfa Slab One", sans-serif;
 }
 
 .container--ye {
@@ -30,6 +38,9 @@
 
 .container--ghosts {
   background: #85BCC6;
+  font-family: "East Sea Dokdo", sans-serif;
+  color: #FFF8E8;
+  text-transform: uppercase;
 }
 
 .container--heartbreak {
@@ -120,11 +131,6 @@
   border-bottom: 5px solid #B7952C;
 }
 
-.album-container--graduation {
-  background: #F30A91;
-  border-bottom: 5px solid #73328A;
-}
-
 .album-container--fantasy {
   background: #EF2341;
   border-bottom: 5px solid #09786C;
@@ -132,13 +138,6 @@
 
 .album-container--yeezus {
   border-bottom: 5px solid #FE1D01;
-}
-
-.album-container--pablo {
-  background: #F69561;
-  font-family: Helvetica;
-  text-transform: uppercase;
-  font-weight: 600;
 }
 
 .album-container--ye {

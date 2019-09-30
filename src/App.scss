@@ -2,6 +2,15 @@
 @import url('https://fonts.googleapis.com/css?family=Rock+Salt&display=swap');
 $yeFont: 'Rock Salt', cursive;
 
+@import url('https://fonts.googleapis.com/css?family=East+Sea+Dokdo&display=swap');
+$ghostsFont: 'East Sea Dokdo', sans-serif;
+
+@import url('https://fonts.googleapis.com/css?family=East+Sea+Dokdo|Graduate&display=swap');
+$collegeFont: 'Graduate', sans-serif;
+
+@import url('https://fonts.googleapis.com/css?family=Alfa+Slab+One&display=swap');
+$graduationFont: 'Alfa Slab One', sans-serif;
+
 // Colour variables
 $college: #3b0316;
 $college2: #FED100;
@@ -31,11 +40,16 @@ $ye2: #17F141;
 
 $ghosts: #DD5E86;
 $ghosts2: #85BCC6;
+$ghosts3: #FFF8E8;
 
 .container {
     height: 100vh;
 
     font-size: 30px;
+
+    &--college {
+        font-family: $collegeFont;
+    }
 
     &--pablo {
         background: $pablo;
@@ -48,7 +62,8 @@ $ghosts2: #85BCC6;
     &--graduation {
         background: $graduation2;
 
-        color: white;
+        color: $graduation;
+        font-family: $graduationFont;
     }
 
     &--ye {
@@ -67,26 +82,30 @@ $ghosts2: #85BCC6;
 
     &--ghosts {
         background: $ghosts2;
+
+        font-family: $ghostsFont;
+        color: $ghosts3;
+        text-transform: uppercase;
     }
 
     &--heartbreak {
         background: $heartbreak;
         color: $heartbreak2;
-        
+
         font-weight: 600;
     }
 
     &--registration {
         background: $registration;
 
-        color: $registration2;  
-        font-family: "Times New Roman", sans-serif;      
+        color: $registration2;
+        font-family: "Times New Roman", sans-serif;
     }
 
     &--throne {
         background: $throne;
     }
-    
+
     &--yeezus {
         background: $yeezus;
 
@@ -97,7 +116,7 @@ $ghosts2: #85BCC6;
 
 .quote-container {
     margin: 50px 10vw;
-    
+
     text-align: center;
 }
 
@@ -115,7 +134,7 @@ $ghosts2: #85BCC6;
     width: 200px;
 
     margin-top: 25px;
-    
+
     border: 1px solid black;
     outline: none;
     box-shadow: none;
@@ -148,11 +167,6 @@ $ghosts2: #85BCC6;
         border-bottom: 5px solid $registration2;
     }
 
-    &--graduation {
-        background: $graduation;
-        border-bottom: 5px solid $graduation2;
-    }
-
     &--fantasy {
         background: $fantasy;
         border-bottom: 5px solid $fantasy2;
@@ -160,14 +174,6 @@ $ghosts2: #85BCC6;
 
     &--yeezus {
         border-bottom: 5px solid $yeezus2;
-    }
-
-    &--pablo {
-        background: $pablo;
-
-        font-family: Helvetica;
-        text-transform: uppercase;
-        font-weight: 600;
     }
 
     &--ye {
