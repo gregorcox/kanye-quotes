@@ -93,6 +93,12 @@
   transition: all 0.2s ease-in-out;
 }
 
+@media (max-width: 840px) {
+  .quote {
+    height: 420px;
+  }
+}
+
 .button {
   height: 50px;
   width: 200px;
@@ -139,12 +145,11 @@
 }
 
 .album-container--registration {
-  background: #5B2D0B;
+  background: black;
   border-bottom: 5px solid #C5AA01;
 }
 
 .album-container--fantasy {
-  background: #EF2341;
   border-bottom: 5px solid #09786C;
 }
 
@@ -152,13 +157,16 @@
   border-bottom: 5px solid #FE1D01;
 }
 
-.album-container--ye {
-  background: #42658E;
-  border-bottom: 5px solid #17F141;
-}
-
 .album-container--ghosts {
   background: #DD5E86;
+}
+
+@media (max-width: 840px) {
+  .album-container {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
 }
 
 .album-container select {

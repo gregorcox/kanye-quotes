@@ -51,6 +51,14 @@ $ghosts: #DD5E86;
 $ghosts2: #85BCC6;
 $ghosts3: #FFF8E8;
 
+$mobile: 840px;
+
+@mixin mobile {
+    @media (max-width: #{$mobile}){
+        @content;
+    }
+}
+
 .container {
     height: 100vh;
 
@@ -143,6 +151,10 @@ $ghosts3: #FFF8E8;
     height: 200px;
 
     transition: all 0.2s ease-in-out;
+
+    @include mobile {
+        height: 420px;
+    }
 }
 
 .button {
@@ -184,12 +196,11 @@ $ghosts3: #FFF8E8;
     }
 
     &--registration {
-        background: $registration;
+        background: black;
         border-bottom: 5px solid $registration2;
     }
 
     &--fantasy {
-        background: $fantasy;
         border-bottom: 5px solid $fantasy2;
     }
 
@@ -197,14 +208,12 @@ $ghosts3: #FFF8E8;
         border-bottom: 5px solid $yeezus2;
     }
 
-    &--ye {
-        background: $ye;
-
-        border-bottom: 5px solid $ye2;
-    }
-
     &--ghosts {
         background: $ghosts;
+    }
+
+    @include mobile {
+        align-items: center;
     }
 
     select {
