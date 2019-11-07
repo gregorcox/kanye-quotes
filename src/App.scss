@@ -60,7 +60,8 @@ $mobile: 840px;
 }
 
 .container {
-    height: 100vh;
+    min-height: 100vh;
+    padding-bottom: 10px;
 
     font-size: 30px;
 
