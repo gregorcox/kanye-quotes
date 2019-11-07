@@ -61,9 +61,12 @@ $mobile: 840px;
 
 .container {
     min-height: 100vh;
-    padding-bottom: 10px;
 
     font-size: 30px;
+
+    @include mobile {
+        padding-bottom: 10px;
+    }
 
     &--college {
         font-family: $collegeFont;

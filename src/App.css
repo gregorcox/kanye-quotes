@@ -7,8 +7,13 @@
 @import url("https://fonts.googleapis.com/css?family=Cinzel|Mansalva&display=swap");
 .container {
   min-height: 100vh;
-  padding-bottom: 10px;
   font-size: 30px;
+}
+
+@media (max-width: 840px) {
+  .container {
+    padding-bottom: 10px;
+  }
 }
 
 .container--college {
